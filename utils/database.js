@@ -7,7 +7,7 @@ const connectToDb= async () => {
         return;
     }
     try{
-        await mongoose.connect(process.env.MONGO_URI,{
+        await mongoose.connect(process.env.MONGODB_URI,{
             dbName:"promptpal",
             useNewUrlParser:true,
             useUnifiedTopology:true,
@@ -17,5 +17,6 @@ const connectToDb= async () => {
     } catch(error){
         console.log("Error connecting to DB",error);
     }
-}
+};
+
 export default connectToDb;
