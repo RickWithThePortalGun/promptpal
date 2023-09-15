@@ -11,7 +11,7 @@ const page = () => {
       </h1>
       <p className="desc text-center">
         PromptPal is an open-source AI prompting tool for modern world to
-        discover, create and sgare creative prompts.
+        discover, create and share creative prompts.
       </p>
       <Feed/>
     </section>
